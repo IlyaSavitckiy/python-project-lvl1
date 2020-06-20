@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "IlyaSavitckiy_brain_games"
-version = "0.3.0"
+version = "0.4.0"
 description = ""
 authors = ["Ilya Savitskiy <hex.ilyasavitskiy@gmail.com>"]
 packages = [
@@ -17,6 +17,7 @@ wemake-python-styleguide = "^0.14.0"
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
 
 [build-system]
 requires = ["poetry>=0.12"]

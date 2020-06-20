@@ -4,4 +4,4 @@
 
 [![Build Status](https://travis-ci.org/IlyaSavitckiy/python-project-lvl1.svg?branch=master)](https://travis-ci.org/IlyaSavitckiy/python-project-lvl1)
 
-[![asciicast](https://asciinema.org/a/n57qXUGeHGMhN57mLvGRRTIDk.svg)](https://asciinema.org/a/n57qXUGeHGMhN57mLvGRRTIDk)
+[![asciicast](https://asciinema.org/a/jFgaap5lJXDw1C99LPnERgmbE.svg)](https://asciinema.org/a/jFgaap5lJXDw1C99LPnERgmbE)

@@ -4,17 +4,52 @@ import prompt
 
 
 def greeting():
-    """Just print a common greeting."""
+    """Print common greeting."""
     print('Welcome to the Brain Games!')
 
 
 def welcome_user():
-    """
-    Take operator's name, greet him and return name value.
+    """Take user's name and greet him.
 
     Returns:
-        Operator's name.
+        user's name
     """
-    name = prompt.string('May I have your name? ')
+    name = prompt.string('\nMay I have your name? ')
     print('Hello, {name}!'.format(name=name))
     return name
+
+
+def print_excuse(users_answer, correct_answer):
+    """Print excuse if user's answer is wrong.
+
+    Args:
+        users_answer: user's answer
+        correct_answer: calculated correct answer
+    """
+    print(
+        """'{ua}' is wrong answer ;(. Correct answer was '{ca}'
+        """.format(ua=users_answer, ca=correct_answer),
+    )
+
+
+def print_greeting(name):
+    """Print to try to play again.
+
+    Args:
+        name: user's name
+    """
+    print("Let's try again, {n}!".format(n=name))
+
+
+def print_correct():
+    """Print if user's answer is correct."""
+    print('Correct!')
+
+
+def print_congratulation(name):
+    """Print congratulation when user wins the game.
+
+    Args:
+        name: user's name
+    """
+    print('Congratulations, {n}!'.format(n=name))
