@@ -4,5 +4,14 @@
 
 [![Build Status](https://travis-ci.org/IlyaSavitckiy/python-project-lvl1.svg?branch=master)](https://travis-ci.org/IlyaSavitckiy/python-project-lvl1)
 
-Installing Brain Games
-[![asciicast](https://asciinema.org/a/jFgaap5lJXDw1C99LPnERgmbE.svg)](https://asciinema.org/a/jFgaap5lJXDw1C99LPnERgmbE)
+<b>Installing Brain Games:</b>
+[![asciicast](https://asciinema.org/a/gHXMlStfveofDL5IIgHGPJegO.svg)](https://asciinema.org/a/gHXMlStfveofDL5IIgHGPJegO)
+
+<b>How to play Brain Even Game</b>
+[![asciicast](https://asciinema.org/a/qFfS5ON7kEVfBDIr64shPaqsD.svg)](https://asciinema.org/a/qFfS5ON7kEVfBDIr64shPaqsD)
+
+<b>How to play Brain Calc Game</b>
+[![asciicast](https://asciinema.org/a/hIrFcA0eYXE54iwWCu8CYWu4G.svg)](https://asciinema.org/a/hIrFcA0eYXE54iwWCu8CYWu4G)
+
+<b>How to play Brain Gcd Game</b>
+[![asciicast](https://asciinema.org/a/yXQuWWc9dsE9VmkKyXJvJQwJB.svg)](https://asciinema.org/a/yXQuWWc9dsE9VmkKyXJvJQwJB)

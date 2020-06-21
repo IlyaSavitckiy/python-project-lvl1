@@ -8,6 +8,15 @@ def greeting():
     print('Welcome to the Brain Games!')
 
 
+def print_rules(rules):
+    """Print rules of the game.
+
+    Args:
+        rules: string with rules
+    """
+    print(rules)
+
+
 def welcome_user():
     """Take user's name and greet him.
 

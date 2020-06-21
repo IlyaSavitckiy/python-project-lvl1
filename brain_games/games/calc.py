@@ -8,11 +8,6 @@ RULES = 'What is the result of the expression?'
 operators = ['+', '-', '*']
 
 
-def print_rules():
-    """Print rules of the game."""
-    print(RULES)
-
-
 def set_parameters():
     """Set parameters to play.
 

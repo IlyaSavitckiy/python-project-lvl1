@@ -11,7 +11,7 @@ def start(game):
         game: name of a game to run
     """
     cli.greeting()
-    game.print_rules()
+    cli.print_rules(game.RULES)
     name = cli.welcome_user()
     rounds = 3
     while rounds > 0:

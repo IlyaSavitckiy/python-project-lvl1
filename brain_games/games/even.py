@@ -7,11 +7,6 @@ import prompt
 RULES = 'Answer "yes" if number even otherwise answer "no".'
 
 
-def print_rules():
-    """Print rules of the game."""
-    print(RULES)
-
-
 def set_parameters():
     """Set parameters to play.
 
