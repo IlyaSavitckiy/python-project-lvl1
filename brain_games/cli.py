@@ -28,6 +28,15 @@ def welcome_user():
     return name
 
 
+def take_answer():
+    """Take user's answer.
+
+    Returns:
+        user's answer
+    """
+    return prompt.string('Your answer: ')
+
+
 def print_excuse(users_answer, correct_answer):
     """Print excuse if user's answer is wrong.
 
@@ -48,11 +57,6 @@ def print_greeting(name):
         name: user's name
     """
     print("Let's try again, {n}!".format(n=name))
-
-
-def print_correct():
-    """Print if user's answer is correct."""
-    print('Correct!')
 
 
 def print_congratulation(name):

@@ -2,8 +2,6 @@
 
 from random import choice, randint
 
-import prompt
-
 RULES = 'What is the result of the expression?'
 operators = ['+', '-', '*']
 
@@ -27,15 +25,6 @@ def ask_question(parts):
     print('Question: {a} {op} {b}'.format(a=num_one, b=num_two, op=operator))
 
 
-def take_answer():
-    """Take user's answer.
-
-    Returns:
-        user's answer
-    """
-    return prompt.integer('Your answer: ')
-
-
 def get_correct_answer(parts):
     """Take parameters to play, get correct answer and return it.
 
@@ -46,9 +35,11 @@ def get_correct_answer(parts):
         correct answer: result of operation with two ramdom numbers.
     """
     num_one, num_two, operator = parts
+    correct_answer = 0
     if operator == '+':
-        return num_one + num_two
+        correct_answer = num_one + num_two
     elif operator == '-':
-        return num_one - num_two
+        correct_answer = num_one - num_two
     elif operator == '*':
-        return num_one * num_two
+        correct_answer = num_one * num_two
+    return str(correct_answer)

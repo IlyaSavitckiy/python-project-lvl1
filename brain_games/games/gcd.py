@@ -2,8 +2,6 @@
 
 from random import randint
 
-import prompt
-
 RULES = 'Find the greatest common divisor of given numbers.'
 
 
@@ -24,15 +22,6 @@ def ask_question(parts):
     """
     num_one, num_two = parts
     print('Question: {a} {b}'.format(a=num_one, b=num_two))
-
-
-def take_answer():
-    """Take user's answer.
-
-    Returns:
-        user's answer
-    """
-    return prompt.integer('Your answer: ')
 
 
 def is_divise(num, divisor):
@@ -61,6 +50,6 @@ def get_correct_answer(parts):
     divisor = min(num_one, num_two)
     while divisor >= 1:
         if is_divise(num_one, divisor) and is_divise(num_two, divisor):
-            return divisor
+            return str(divisor)
         divisor -= 1
-    return divisor
+    return str(divisor)

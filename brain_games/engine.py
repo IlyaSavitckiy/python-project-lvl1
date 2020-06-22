@@ -17,13 +17,13 @@ def start(game):
     while rounds > 0:
         game_parts = game.set_parameters()
         game.ask_question(game_parts)
-        users_answer = game.take_answer()
+        users_answer = cli.take_answer()
         correct_answer = game.get_correct_answer(game_parts)
         if correct_answer != users_answer:
             cli.print_excuse(users_answer, correct_answer)
             cli.print_greeting(name)
             break
-        cli.print_correct()
+        print('Correct!')
         rounds -= 1
     if rounds == 0:
         cli.print_congratulation(name)

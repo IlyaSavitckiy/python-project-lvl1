@@ -2,8 +2,6 @@
 
 from random import randint
 
-import prompt
-
 RULES = 'Answer "yes" if number even otherwise answer "no".'
 
 
@@ -24,15 +22,6 @@ def ask_question(parts):
     """
     num = parts
     print('Question: {n}'.format(n=num))
-
-
-def take_answer():
-    """Take user's answer.
-
-    Returns:
-        user's answer
-    """
-    return prompt.string('Your answer: ')
 
 
 def get_correct_answer(parts):
