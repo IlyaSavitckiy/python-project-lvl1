@@ -31,7 +31,7 @@ def get_correct_answer(parts):
         parts: parameters to play
 
     Returns:
-        Boolean. True if number is even.
+        yes or no, depends on is number even or not
     """
     num = parts
     return 'yes' if (num % 2 == 0) else 'no'
