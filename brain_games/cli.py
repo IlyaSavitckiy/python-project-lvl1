@@ -1,11 +1,6 @@
-"""File with foo to greet operator."""
+"""File with comands to interact with user."""
 
 import prompt
-
-
-def greeting():
-    """Print common greeting."""
-    print('Welcome to the Brain Games!')
 
 
 def print_rules(rules):
@@ -18,18 +13,18 @@ def print_rules(rules):
 
 
 def welcome_user():
-    """Take user's name and greet him.
+    """Take user's name, greet him and return user's name.
 
     Returns:
         user's name
     """
     name = prompt.string('\nMay I have your name? ')
-    print('Hello, {name}!'.format(name=name))
+    print('Hello, {n}!'.format(n=name))
     return name
 
 
 def take_answer():
-    """Take user's answer.
+    """Take user's answer and return it.
 
     Returns:
         user's answer
@@ -51,7 +46,7 @@ def print_excuse(users_answer, correct_answer):
 
 
 def print_greeting(name):
-    """Print to try to play again.
+    """Print greeting to try to play again.
 
     Args:
         name: user's name

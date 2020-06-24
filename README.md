@@ -8,16 +8,16 @@
 [![asciicast](https://asciinema.org/a/gHXMlStfveofDL5IIgHGPJegO.svg)](https://asciinema.org/a/gHXMlStfveofDL5IIgHGPJegO)
 
 <b>How to play Brain Even Game</b>
-[![asciicast](https://asciinema.org/a/qFfS5ON7kEVfBDIr64shPaqsD.svg)](https://asciinema.org/a/qFfS5ON7kEVfBDIr64shPaqsD)
+[![asciicast](https://asciinema.org/a/gujfYYzu4rz5amW4IQjf7oFpR.svg)](https://asciinema.org/a/gujfYYzu4rz5amW4IQjf7oFpR)
 
 <b>How to play Brain Calc Game</b>
-[![asciicast](https://asciinema.org/a/hIrFcA0eYXE54iwWCu8CYWu4G.svg)](https://asciinema.org/a/hIrFcA0eYXE54iwWCu8CYWu4G)
+[![asciicast](https://asciinema.org/a/EYLheQGHr02zQ53fo12am2gkK.svg)](https://asciinema.org/a/EYLheQGHr02zQ53fo12am2gkK)
 
 <b>How to play Brain Gcd Game</b>
-[![asciicast](https://asciinema.org/a/yXQuWWc9dsE9VmkKyXJvJQwJB.svg)](https://asciinema.org/a/yXQuWWc9dsE9VmkKyXJvJQwJB)
+[![asciicast](https://asciinema.org/a/ZuX6LAnT7JeZJSMgJZGDB5QHb.svg)](https://asciinema.org/a/ZuX6LAnT7JeZJSMgJZGDB5QHb)
 
 <b>How to play Brain Progression Game</b>
-[![asciicast](https://asciinema.org/a/Xgib1Zvym7wQrWdX5Z17RXqk9.svg)](https://asciinema.org/a/Xgib1Zvym7wQrWdX5Z17RXqk9)
+[![asciicast](https://asciinema.org/a/zgHwYeJAZErU1Mj8OKMNE2hS0.svg)](https://asciinema.org/a/zgHwYeJAZErU1Mj8OKMNE2hS0)
 
 <b>How to play Brain Prime Game</b>
-[![asciicast](https://asciinema.org/a/IXVF1CJRwWDeHII9y6abipnLN.svg)](https://asciinema.org/a/IXVF1CJRwWDeHII9y6abipnLN)
+[![asciicast](https://asciinema.org/a/9PmkJQd5SKEaDfIKIGNkAOxqv.svg)](https://asciinema.org/a/9PmkJQd5SKEaDfIKIGNkAOxqv)

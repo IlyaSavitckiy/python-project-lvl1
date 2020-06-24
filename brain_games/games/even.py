@@ -20,12 +20,11 @@ def ask_question(parts):
     Args:
         parts: parameters to play
     """
-    num = parts
-    print('Question: {n}'.format(n=num))
+    print('Question: {p}'.format(p=parts))
 
 
 def get_correct_answer(parts):
-    """Take a parameter to play and check if it is even.
+    """Take a parameter to play (number) and check if it is even.
 
     Args:
         parts: parameters to play
@@ -33,5 +32,4 @@ def get_correct_answer(parts):
     Returns:
         yes or no, depends on is number even or not
     """
-    num = parts
-    return 'yes' if (num % 2 == 0) else 'no'
+    return 'yes' if (parts % 2 == 0) else 'no'

@@ -1,16 +1,16 @@
-"""Engine of all brain games."""
+"""Engine of brain games."""
 
 
 from brain_games import cli
 
 
 def start(game):
-    """Run engine to run brain games.
+    """Start engine to run brain games.
 
     Args:
         game: name of a game to run
     """
-    cli.greeting()
+    print('Welcome to the Brain Games!')
     cli.print_rules(game.RULES)
     name = cli.welcome_user()
     rounds = 3
