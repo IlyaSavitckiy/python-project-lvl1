@@ -1,6 +1,6 @@
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+[![Maintainability](https://api.codeclimate.com/v1/badges/0355cd17bd163ed48003/maintainability)](https://codeclimate.com/github/IlyaSavitckiy/python-project-lvl1/maintainability)
 
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage" /></a>
+<a href="https://codeclimate.com/github/IlyaSavitckiy/python-project-lvl1/test_coverage"><img src="https://api.codeclimate.com/v1/badges/0355cd17bd163ed48003/test_coverage" /></a>
 
 [![Build Status](https://travis-ci.org/IlyaSavitckiy/python-project-lvl1.svg?branch=master)](https://travis-ci.org/IlyaSavitckiy/python-project-lvl1)
 
