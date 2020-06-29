@@ -5,6 +5,21 @@ from random import randint
 RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
+def is_prime(num):
+    """Check if number is prime.
+
+    Args:
+        num: number to check
+
+    Returns:
+        Boolean. True if number is prime
+    """
+    for divisor in range(2, round(num / 2), 1):
+        if num % divisor == 0:
+            return False
+    return True
+
+
 def set_parameters():
     """Set parameters to play.
 
@@ -14,38 +29,14 @@ def set_parameters():
     return randint(1, 100)
 
 
-def ask_question(parts):
-    """Ask a question to user.
-
-    Args:
-        parts: parameters to play
-    """
-    num = parts
-    print('Question: {n}'.format(n=num))
-
-
-def is_prime(parts):
-    """Check if number is prime.
-
-    Args:
-        parts: number to check
+def ask_and_calculate():
+    """Prepare a question to user and calculate and return the correct answer.
 
     Returns:
-        Boolean. True if number is prime
+        correct_answer: yes or no, depends on is number prime or not
+        question: string with prepared question
     """
-    for divisor in range(2, round(parts / 2), 1):
-        if parts % divisor == 0:
-            return False
-    return True
-
-
-def get_correct_answer(parts):
-    """Take a parameter to play and check if it is prime.
-
-    Args:
-        parts: parameters to play
-
-    Returns:
-        yes or no, depends on is number prime or not
-    """
-    return 'yes' if is_prime(parts) else 'no'
+    game_parts = set_parameters()
+    question = '{n}'.format(n=game_parts)
+    correct_answer = 'yes' if is_prime(game_parts) else 'no'
+    return (correct_answer, question)

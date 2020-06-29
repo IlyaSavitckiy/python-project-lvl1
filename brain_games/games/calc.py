@@ -1,9 +1,29 @@
 """Logic of the brain calc game."""
 
+from operator import add, mul, sub
 from random import choice, randint
 
 RULES = 'What is the result of the expression?'
-operators = ['+', '-', '*']
+OPERATORS = ('+', '-', '*')
+
+
+def make_operation(num_one, num_two, operator):
+    """Make an operation with 2 numbers using operator.
+
+    Args:
+        num_one: some number
+        num_two: some number
+        operator: some operator from OPERATORS
+
+    Returns:
+        result of the operation
+    """
+    if operator == '+':
+        return add(num_one, num_two)
+    elif operator == '-':
+        return sub(num_one, num_two)
+    elif operator == '*':
+        return mul(num_one, num_two)
 
 
 def set_parameters():
@@ -12,34 +32,20 @@ def set_parameters():
     Returns:
         two random numbers from 1 to 100 and operator
     """
-    return (randint(1, 100), randint(1, 100), choice(operators))
+    num_one = randint(1, 100)
+    num_two = randint(1, 100)
+    operator = choice(OPERATORS)
+    return (num_one, num_two, operator)
 
 
-def ask_question(parts):
-    """Ask a question to user.
-
-    Args:
-        parts: parameters to play
-    """
-    num_one, num_two, operator = parts
-    print('Question: {a} {op} {b}'.format(a=num_one, b=num_two, op=operator))
-
-
-def get_correct_answer(parts):
-    """Take parameters to play, get correct answer and return it.
-
-    Args:
-        parts: parameters to play
+def ask_and_calculate():
+    """Prepare a question to user and calculate and return the correct answer.
 
     Returns:
-        correct answer: result of operation with two ramdom numbers.
+        result_of_operation: result of operation with two ramdom numbers
+        question: string with prepared question
     """
-    num_one, num_two, operator = parts
-    correct_answer = 0
-    if operator == '+':
-        correct_answer = num_one + num_two
-    elif operator == '-':
-        correct_answer = num_one - num_two
-    elif operator == '*':
-        correct_answer = num_one * num_two
-    return str(correct_answer)
+    num_one, num_two, operator = set_parameters()
+    result_of_operation = str(make_operation(num_one, num_two, operator))
+    question = '{a} {op} {b}'.format(a=num_one, b=num_two, op=operator)
+    return (result_of_operation, question)

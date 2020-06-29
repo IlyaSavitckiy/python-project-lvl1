@@ -14,22 +14,14 @@ def set_parameters():
     return randint(1, 100)
 
 
-def ask_question(parts):
-    """Ask a question to user.
-
-    Args:
-        parts: parameters to play
-    """
-    print('Question: {p}'.format(p=parts))
-
-
-def get_correct_answer(parts):
-    """Take a parameter to play (number) and check if it is even.
-
-    Args:
-        parts: parameters to play
+def ask_and_calculate():
+    """Prepare a question to user and calculate and return the correct answer.
 
     Returns:
-        yes or no, depends on is number even or not
+        correct_answer: yes or no, depends on is number even or not
+        question: string with prepared question
     """
-    return 'yes' if (parts % 2 == 0) else 'no'
+    game_parts = set_parameters()
+    correct_answer = 'yes' if (game_parts % 2 == 0) else 'no'
+    question = str(game_parts)
+    return (correct_answer, question)

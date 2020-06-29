@@ -11,45 +11,37 @@ def set_parameters():
     Returns:
         two random numbers from 1 to 100
     """
-    return (randint(1, 100), randint(1, 100))
+    num_one = randint(1, 100)
+    num_two = randint(1, 100)
+    return (num_one, num_two)
 
 
-def ask_question(parts):
-    """Ask a question to user.
-
-    Args:
-        parts: parameters to play
-    """
-    num_one, num_two = parts
-    print('Question: {a} {b}'.format(a=num_one, b=num_two))
-
-
-def is_divise(num, divisor):
-    """Check if num divise by divisor.
+def find_greatest_divisor(num_one, num_two):
+    """Find greatest common divisor of two numbers.
 
     Args:
-        num: random number
-        divisor: number
+        num_one: number more than 1
+        num_two: number more than 1
 
     Returns:
-        bool
+        greatest common divisor
     """
-    return num % divisor == 0
-
-
-def get_correct_answer(parts):
-    """Take parameters to play, get correct answer and return it.
-
-    Args:
-        parts: parameters to play
-
-    Returns:
-        correct answer: the greatest common divisor of two numbers.
-    """
-    num_one, num_two = parts
     divisor = min(num_one, num_two)
-    while divisor >= 1:
-        if is_divise(num_one, divisor) and is_divise(num_two, divisor):
-            return str(divisor)
+    while divisor > 0:
+        if (num_one % divisor == 0) and (num_two % divisor == 0):
+            break
         divisor -= 1
-    return str(divisor)
+    return divisor
+
+
+def ask_and_calculate():
+    """Prepare a question to user and calculate and return the correct answer.
+
+    Returns:
+        divisor: the greatest common divisor of two numbers
+        question: string with prepared question
+    """
+    num_one, num_two = set_parameters()
+    question = '{a} {b}'.format(a=num_one, b=num_two)
+    greatest_divisor = find_greatest_divisor(num_one, num_two)
+    return (str(greatest_divisor), question)

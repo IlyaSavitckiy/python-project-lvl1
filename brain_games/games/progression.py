@@ -5,21 +5,24 @@ from random import randint
 RULES = 'What number is missing in the progression?'
 
 
-def make_progression():
+def build_progression(start, step, size):
     """Set progression to play the game.
+
+    Args:
+        start: first number to build a progression
+        step: step of progression
+        size: amount of numbers in progression
 
     Returns:
         progression with 10 str(numbers) and random step
     """
-    start = randint(1, 10)
-    step = randint(1, 10)
-    count = 0
-    part = start
+    counter = 0
+    element = start
     progression = [str(start)]
-    while count < 10:
-        part += step
-        progression.append(str(part))
-        count += 1
+    while counter < size:
+        element += step
+        progression.append(str(element))
+        counter += 1
     return progression
 
 
@@ -27,33 +30,24 @@ def set_parameters():
     """Set parameters to play.
 
     Returns:
-        hidden_number: number to guess
-        progression: progression by string with hidden_number
+        progression made with random numbers
     """
-    progression = make_progression()
-    rand_index = randint(0, 9)
-    hidden_number = str(progression[rand_index])
-    progression[rand_index] = '...'
-    return (hidden_number, progression)
+    start = randint(1, 10)
+    step = randint(1, 10)
+    size = 10
+    return build_progression(start, step, size)
 
 
-def ask_question(parts):
-    """Ask a question to user.
-
-    Args:
-        parts: parameters to play
-    """
-    progression = ' '.join(parts[1])
-    print('Question: {pr}'.format(pr=progression))
-
-
-def get_correct_answer(parts):
-    """Take parameters to play, get correct answer and return it.
-
-    Args:
-        parts: parameters to play
+def ask_and_calculate():
+    """Prepare a question to user and calculate and return the correct answer.
 
     Returns:
-        correct answer: hidden number from progression.
+        hidden number: hidden from progression
+        question: string with prepared question
     """
-    return parts[0]
+    game_parts = set_parameters()
+    random_index = randint(0, 9)
+    hidden_number = game_parts[random_index]
+    game_parts[random_index] = '...'
+    question = ' '.join(game_parts)
+    return (hidden_number, question)
