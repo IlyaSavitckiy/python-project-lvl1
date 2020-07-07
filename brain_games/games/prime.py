@@ -2,7 +2,7 @@
 
 from random import randint
 
-RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num):
@@ -14,29 +14,22 @@ def is_prime(num):
     Returns:
         Boolean. True if number is prime
     """
+    if num <= 1:
+        return False
     for divisor in range(2, round(num / 2), 1):
         if num % divisor == 0:
             return False
     return True
 
 
-def set_parameters():
-    """Set parameters to play.
-
-    Returns:
-        random number from 1 to 100
-    """
-    return randint(1, 100)
-
-
-def ask_and_calculate():
+def prepare_question_and_calculate():
     """Prepare a question to user and calculate and return the correct answer.
 
     Returns:
-        correct_answer: yes or no, depends on is number prime or not
+        correct_answer: 'yes' or 'no', depends on is number prime or not
         question: string with prepared question
     """
-    game_parts = set_parameters()
-    question = '{n}'.format(n=game_parts)
-    correct_answer = 'yes' if is_prime(game_parts) else 'no'
+    number_to_ask = randint(1, 100)
+    question = str(number_to_ask)
+    correct_answer = 'yes' if is_prime(number_to_ask) else 'no'
     return (correct_answer, question)

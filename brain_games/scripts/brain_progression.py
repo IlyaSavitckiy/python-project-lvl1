@@ -8,7 +8,7 @@ from brain_games.games import progression
 
 def main():
     """Start to play."""
-    engine.start(progression)
+    engine.play(progression)
 
 
 if __name__ == '__main__':

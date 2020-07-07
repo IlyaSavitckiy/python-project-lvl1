@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "IlyaSavitckiy_brain_games"
-version = "0.8.1"
+version = "0.8.4"
 description = "Bundle of the Brain Games"
 authors = ["Ilya Savitckiy <hex.ilyasavitckiy@gmail.com>"]
 repository = "https://github.com/IlyaSavitckiy/python-project-lvl1"

@@ -2,26 +2,17 @@
 
 from random import randint
 
-RULES = 'Answer "yes" if number even otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
 
 
-def set_parameters():
-    """Set parameters to play.
-
-    Returns:
-        random number from 1 to 100
-    """
-    return randint(1, 100)
-
-
-def ask_and_calculate():
+def prepare_question_and_calculate():
     """Prepare a question to user and calculate and return the correct answer.
 
     Returns:
-        correct_answer: yes or no, depends on is number even or not
+        correct_answer: 'yes' or 'no', depends on is number even or not
         question: string with prepared question
     """
-    game_parts = set_parameters()
-    correct_answer = 'yes' if (game_parts % 2 == 0) else 'no'
-    question = str(game_parts)
+    number_to_ask = randint(1, 100)
+    correct_answer = 'yes' if (number_to_ask % 2 == 0) else 'no'
+    question = str(number_to_ask)
     return (correct_answer, question)

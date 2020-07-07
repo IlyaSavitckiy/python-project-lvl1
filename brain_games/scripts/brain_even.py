@@ -8,7 +8,7 @@ from brain_games.games import even
 
 def main():
     """Start to play."""
-    engine.start(even)
+    engine.play(even)
 
 
 if __name__ == '__main__':

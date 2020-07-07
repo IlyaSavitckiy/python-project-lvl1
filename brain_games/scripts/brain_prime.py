@@ -8,7 +8,7 @@ from brain_games.games import prime
 
 def main():
     """Start to play."""
-    engine.start(prime)
+    engine.play(prime)
 
 
 if __name__ == '__main__':
